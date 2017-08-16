@@ -3,6 +3,10 @@
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
 
+
+$scotch-primary: rgb(255, 69, 69);
+$scotch-secondary: #FF7B7B;
+
 %oswald { font-family: 'Oswald', sans-serif; }
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
 
@@ -22,7 +26,7 @@ a {
     outline: none !important;
     text-decoration: none !important;
     transition: all 225ms ease;
-    color: rgb(19, 100, 214);
+    color: $scotch-secondary;
 
     &:hover { color: #6165FF; }
 }
@@ -49,12 +53,12 @@ nav.navbar {
 
         i {
             transition: inherit;
-            color: rgb(19, 100, 214);
+            color: $scotch-primary;
             transform: scale(1);
         }
 
         &:hover i {
-            color: rgb(19, 100, 214);
+            color: rgb(255, 111, 111);
             transform: scale(1.35);
         }
     }
@@ -73,13 +77,13 @@ h1.special {
     position: relative;
     text-align: center;
     overflow: hidden;
-    margin: 4;
+    margin: 0;
     text-transform: uppercase;
     @extend %oswald;
     font-size: 69px;
     line-height: 69px;
     font-weight: 700;
-    color: rgb(19, 100, 214);
+    color: $scotch-primary;
 
     span {
         display: inline-block;
