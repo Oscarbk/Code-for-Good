@@ -5947,7 +5947,7 @@ a {
   outline: none !important;
   text-decoration: none !important;
   transition: all 225ms ease;
-  color: #1364d6; }
+  color: #FF7B7B; }
   a:hover {
     color: #6165FF; }
 
@@ -5968,10 +5968,10 @@ nav.navbar {
     text-transform: none; }
     nav.navbar .navbar-brand i {
       transition: inherit;
-      color: #1364d6;
+      color: #ff4545;
       transform: scale(1); }
     nav.navbar .navbar-brand:hover i {
-      color: #1364d6;
+      color: #ff6f6f;
       transform: scale(1.35); }
 
 .title-group {
@@ -5986,12 +5986,12 @@ h1.special {
   position: relative;
   text-align: center;
   overflow: hidden;
-  margin: 4;
+  margin: 0;
   text-transform: uppercase;
   font-size: 69px;
   line-height: 69px;
   font-weight: 700;
-  color: #1364d6; }
+  color: #ff4545; }
   h1.special span {
     display: inline-block;
     position: relative;
