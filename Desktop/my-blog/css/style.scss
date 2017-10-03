@@ -1,6 +1,9 @@
 ---
 ---
-@import '/hoosegow/.bundle/ruby/2.4.0/gems/jekyll-theme-primer-0.5.2/_sass.'
+@import '../_sass/bootstrap';
+@import '../_sass/syntax-highlighting';
+
+
 $scotch-primary: rgb(255, 69, 69);
 $scotch-secondary: #FF7B7B;
 
