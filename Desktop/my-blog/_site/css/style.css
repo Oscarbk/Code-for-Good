@@ -5947,7 +5947,7 @@ a {
   outline: none !important;
   text-decoration: none !important;
   transition: all 225ms ease;
-  color: #FF7B7B; }
+  color: #086AFF; }
   a:hover {
     color: #6165FF; }
 
@@ -5968,7 +5968,7 @@ nav.navbar {
     text-transform: none; }
     nav.navbar .navbar-brand i {
       transition: inherit;
-      color: #ff4545;
+      color: #086aff;
       transform: scale(1); }
     nav.navbar .navbar-brand:hover i {
       color: #ff6f6f;
@@ -5991,7 +5991,7 @@ h1.special {
   font-size: 69px;
   line-height: 69px;
   font-weight: 700;
-  color: #ff4545; }
+  color: #086aff; }
   h1.special span {
     display: inline-block;
     position: relative;
