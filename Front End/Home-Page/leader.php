@@ -82,7 +82,7 @@
     <!-- Contact-->
     <section class="contact-section">
       <div class = "container-wrapper">
-        <div class="main-container">
+        <div class="main-container" visibility: <?php echo $hidden?>>
           <form action="" method="post">
             <h2>Log Volunteer Hours</h2>
             
