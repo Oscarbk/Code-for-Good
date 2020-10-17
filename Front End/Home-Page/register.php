@@ -153,9 +153,11 @@
     </section>
 
 	<?php
+	  // Get connection vars from php file and connect to hackathon database
 	  require_once('../../backend/connectionVars.php');
-	  // TODO: Fix fetching skills
 	  $dbc       = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+	  
+	  // Get all information new user input
 	  $firstName = $_POST['first_name'];
 	  $lastName  = $_POST['last_name'];
 	  $age       = $_POST['Age'];
@@ -164,11 +166,11 @@
 	  $vType     = $_POST['skills'];
 	  $email     = $_POST['email'];
 	  $password  = $_POST['password'];
-	  //echo $firstName . $lastName . $age . $city . $org . $vType . $email . $password;
-	  //echo '\n' . $vType;
+
+	  // Create new user in database
 	  $query = "INSERT INTO user(password, fname, lname, address, role, email, vhours, vtype, contribution) 
 		    values ('$password', '$firstName', '$lastName', '$city', '0', '$email', '0', '$vType', '0.00')";
-	  echo $query;
+	  $data = mysqli_query($dbc, $query);
 
 	?>
     <!-- Footer-->
