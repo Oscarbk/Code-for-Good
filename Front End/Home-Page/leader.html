@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .container-wrapper{
+        display:flex;
+
+      }
+    </style>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -67,45 +73,54 @@
 
     <!-- Contact-->
     <section class="contact-section">
-      <div class="main-container">
-        <form action="" method="post">
-          <h2>Log Volunteer Hours</h2>
-          
-          
-          
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              placeholder="Email"
-              required="required"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              name="password"
-              placeholder="Number of Hours"
-              required="required"
-            />
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">
-              Log Hours
-            </button>
-          </div>
-        </form>
-      </div>
+      <div class = "container-wrapper">
+        <div class="main-container">
+          <form action="" method="post">
+            <h2>Log Volunteer Hours</h2>
+            
+            
+            
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Email"
+                required="required"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="password"
+                placeholder="Number of Hours"
+                required="required"
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success btn-lg btn-block">
+                Log Hours
+              </button>
+            </div>
+          </form>
+        </div>
+      <div class = "main-container">
+        <h2> 
+         <p> Name has volenteered NumHours hours </p>
+        </h2>
 
+      </div>
+  
+      </div>
+     
       
       <h2 class = "aligned">Hours Leaderboard</h2>
       <table class = "hoursLeader">
         <tbody>
           <tr>
               <th>Rank</th>
-              <th>Email </th>
+              <th>Name </th>
               <th>Hours</th>
           </tr>
           <tr>
