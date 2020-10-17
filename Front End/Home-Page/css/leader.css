@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+table{
+  border-spacing: 0;
+  background-color: gray;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+.tr:nth-child(2) > td{
+  border-top-width: 0;
+}
+
+tr{
+  background-color: table-color;
+}
+
+th, td{
+  margin: 0;
+  padding: .5em 1.5em;
+  text-align: center;
+  border-width: horizontal-border-width 0;
+  border-color: header-color;
+  border-style: solid;
+}
+
+th{
+  border-bottom-width: horizontal-border-width;
+}
+
+th:nth-child(even){
+  border-width: 0 vertical-border-width;
+  border-color: table-color;
+  border-style: solid;
+}
+
+td:nth-child(even){
+  border-width: horizontal-border-width vertical-border-width;
+  border-color: header-color;
+  border-style: solid;
+}
+
+.hoursLeader
+{
+    width: 29%;
+}
+
+.organizationsLeader
+{
+    width: 40%;
+}
+
+.aligned
+{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
