@@ -6759,7 +6759,7 @@ button.bg-dark:focus {
 }
 
 .bg-black {
-  background-color: #000000 !important;
+  background-color: #fff important;
 }
 
 a.bg-black:hover,
@@ -10622,7 +10622,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: black;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10656,6 +10656,14 @@ body {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
+
+  #mainNav22 {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
     color: rgba(255, 255, 255, 0.5);
