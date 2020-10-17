@@ -60,6 +60,13 @@
 
     <!-- Signup-->
 
+	<?php
+	  require_once('../../backend/connectionVars.php');
+	  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+	  
+
+	?>
+
     <!-- Contact-->
     <section class="contact-section bg-black">
       <div class="main-container">
