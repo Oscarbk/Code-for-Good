@@ -196,7 +196,20 @@
       </table>
 
     </section>
-    
+    <?php
+
+	  require_once('../../backend/connectionVars.php');
+	  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+	  $email    = $_POST['email'];
+	  $password = $_POST['password'];
+	  $query = "SELECT * FROM user WHERE email = '$email'";
+	  $data  = mysqli_query($dbc, $query);
+	  $row   = mysqli_fetch_array($data);
+	  $newHours = $row['vhours'] + $_POST['hours'];
+	  $addHours = "UPDATE user SET vhours = " . $newHours . " where email = " . "'$email'";
+	  mysqli_query($dbc, $addHours);
+?> 
     <div class="socialmedia">
       <a class="mx-2" href="https://twitter.com/ALSFlorida"><i class="fab fa-twitter"></i></a>
       <a class="mx-2" href="https://www.facebook.com/ALSFlorida"><i class="fab fa-facebook-f"></i></a>
