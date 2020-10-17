@@ -1,12 +1,12 @@
 .main-container {
   flex: 1 0 auto;
   text-align: center;
-  margin: 12% auto 5%;
+  margin: 0px 35%;
   max-width: 400px;
   width: 100%;
   padding: 25px;
   border-radius: 30px;
-  background-color: white;
+  background-color: #e4f9ff;
 }
 
 .form-signin input[type="email"] {
@@ -27,7 +27,7 @@
   border-radius: 0.25rem;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #e4f9ff;
   border: 1px solid #ced4da;
 }
 
@@ -45,4 +45,8 @@
 .btnr:hover {
   text-decoration: underline;
   box-shadow: 2px 5px;
+}
+
+.socialmedia{
+  background-color: black;
 }
