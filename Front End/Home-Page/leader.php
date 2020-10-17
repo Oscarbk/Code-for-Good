@@ -61,7 +61,7 @@
                 <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="login.html">Log in</a>
+                <a class="nav-link js-scroll-trigger" href="../../backend/logout.php">Log out</a>
               </li>
             </ul>
           </div>
@@ -115,7 +115,7 @@
         </div>
       <div class = "main-container">
         <h2> 
-         <p> Name has volenteered NumHours hours </p>
+	<p> <?php echo $_SESSION['fname'] . ' has volunteered ' . $_SESSION['vhours'] . ' hours';	?></p>
         </h2>
 
       </div>

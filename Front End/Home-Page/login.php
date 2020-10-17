@@ -118,13 +118,12 @@
 	  $_SESSION['contribution'] = $row['contribution'];
 
 	  $logged = isset($_SESSION['fname']);
-	  if ($logged)
+	  if (strcmp($_SESSION['fname'], '') != 0)
 	  {
-	    header('Location: ./leader.php');
-	    echo 'not getting to leader';
+		  header('Location: ./leader.php');
 	  }
 	  else
-	    echo 'something went wrong';
+	    echo 'Please enter a valid email and password.';
 	?>
     
     <div class="socialmedia">
