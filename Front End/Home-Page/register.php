@@ -60,12 +60,6 @@
 
     <!-- Signup-->
 
-	<?php
-	  require_once('../../backend/connectionVars.php');
-	  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-	  
-
-	?>
 
     <!-- Contact-->
     <section class="contact-section bg-black">
@@ -157,6 +151,23 @@
         </form>
       </div>
     </section>
+
+	<?php
+	  require_once('../../backend/connectionVars.php');
+	  // TODO: Fix fetching skills
+	  $dbc       = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+	  $firstName = $_POST['first_name'];
+	  $lastName  = $_POST['last_name'];
+	  $age       = $_POST['Age'];
+	  $city      = $_POST['City'];
+	  $org       = $_POST['Organization'];
+	  $vType     = $_POST['skills'];
+	  $email     = $_POST['email'];
+	  $password  = $_POST['password'];
+	  //echo $firstName . $lastName . $age . $city . $org . $vType . $email . $password;
+	  //echo '\n' . $vType;
+
+	?>
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
       <div class="container">Copyright © Your Website 2020</div>
