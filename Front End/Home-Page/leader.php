@@ -71,6 +71,14 @@
 
     <!-- Signup-->
 
+    <?php
+	  session_start();
+	  $hidden = 'hidden';
+	  if ($_SESSION['role'] == 1)
+	    $hidden = 'visible';
+	
+	  ?>
+    
     <!-- Contact-->
     <section class="contact-section">
       <div class = "container-wrapper">
