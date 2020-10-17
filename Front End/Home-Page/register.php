@@ -166,6 +166,9 @@
 	  $password  = $_POST['password'];
 	  //echo $firstName . $lastName . $age . $city . $org . $vType . $email . $password;
 	  //echo '\n' . $vType;
+	  $query = "INSERT INTO user(password, fname, lname, address, role, email, vhours, vtype, contribution) 
+		    values ('$password', '$firstName', '$lastName', '$city', '0', '$email', '0', '$vType', '0.00')";
+	  echo $query;
 
 	?>
     <!-- Footer-->
