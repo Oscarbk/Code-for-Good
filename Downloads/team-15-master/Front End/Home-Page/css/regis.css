@@ -1,0 +1,48 @@
+.main-container {
+  flex: 1 0 auto;
+  text-align: center;
+  margin: 12% auto 5%;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.form-signin .form-control {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+
+.btnr {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  margin-bottom: 10px;
+  background-color: #ffcc00;
+}
+
+.btnr:hover {
+  text-decoration: underline;
+  box-shadow: 2px 5px;
+}
