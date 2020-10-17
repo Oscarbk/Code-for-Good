@@ -10734,14 +10734,14 @@ body {
   background-size: cover;
 }
 .masthead h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: Optima, "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #fa1616;
   -webkit-background-clip: text;
   background-clip: text;
 }
