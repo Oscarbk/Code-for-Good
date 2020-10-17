@@ -100,16 +100,23 @@
     </section>
 
 	<?php
+	  session_start();
 	  require_once('../../backend/connectionVars.php');
 	  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 	  $email    = $_POST['email'];
 	  $password = $_POST['password'];
-
-	  $query = "SELECT role FROM user WHERE email = '$email'";
+	  $query = "SELECT * FROM user WHERE email = '$email'";
 	  $data  = mysqli_query($dbc, $query);
 	  $row   = mysqli_fetch_array($data);
-	  echo $row['role'];
+	  
+	  $_SESSION['role'] = $row['role'];
+	  $_SESSION['fname'] = $row['fname'];
+	  $_SESSION['lname'] = $row['lname'];
+	  $_SESSION['vhours'] = $row['vhours'];
+	  $_SESSION['vtype'] = $row['vtype'];
+	  $_SESSION['contribution'] = $row['contribution'];
+
 	?>
     
     <div class="socialmedia">
