@@ -1,7 +1,10 @@
 .main-container {
   flex: 1 0 auto;
   text-align: center;
-  margin: 0px 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   max-width: 400px;
   width: 100%;
   padding: 25px;
@@ -49,7 +52,11 @@
 
 .socialmedia{
   background-color: white;
+  display: block;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   text-align: center;
 }
 
