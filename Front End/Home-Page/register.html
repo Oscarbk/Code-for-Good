@@ -71,37 +71,91 @@
     <!-- Contact-->
     <section class="contact-section bg-black">
       <div class="main-container">
-        <h1>Register</h1>
-
-        <form
-          action="{% url 'contacts:register' %}"
-          method="post"
-          class="form-signin"
-        >
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email address"
-            class="form-control"
-            required
-            autofocus
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            class="form-control"
-            placeholder="Password"
-            required
-          />
-          <button type="submit" onclick="return hashpw()" class="btnr">
-            Register
-          </button>
+        <form action="" method="post">
+          <h2>Register</h2>
+          <p class="hint-text">
+            Create your account. It's free and only takes a minute.
+          </p>
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="first_name"
+                  placeholder="First Name"
+                  required="required"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="last_name"
+                  placeholder="Last Name"
+                  required="required"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Age"
+                  placeholder="Age"
+                  required="required"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="City"
+                  placeholder="City"
+                  required="required"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="Organization"
+              placeholder="Organization"
+            />
+          </div>
+          <select name="skills" multiple="" class="ui fluid dropdown">
+            <option value="LV">Leadership Volunteers</option>
+            <option value="MV">Mission Volunteers</option>
+            <option value="EV">Day of Event Volunteers</option>
+            <option value="SV">Skilled Based Volunteers</option>
+          </select>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="Password"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">
+              Register Now
+            </button>
+          </div>
         </form>
-        <div class="footnote">
-          <a href="contacts.html" class="veryBottomBTN">Home</a>
-        </div>
       </div>
     </section>
     <!-- Footer-->
